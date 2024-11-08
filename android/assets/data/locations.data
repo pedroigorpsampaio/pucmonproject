@@ -1,0 +1,59 @@
+-- Locations Data File
+-- README PLEASE!
+-- Contains locations that will be available in game
+-- To use spaces in identifiers use underline "_" (see examples below)
+-- Pay attention in the provided examples and commentaries. Mimic them.
+-- Location name and description should be created in language bundle property files
+-- Their names must be the same one here and in enum concatenated with "_Name" for names
+-- and "_Desc" for description. See provided examples in property file and mimic them.
+-- author: Pedro Sampaio
+-- since:  2.0
+--
+Location_NIT {
+    -- location id (should be unique to be correctly associated in missions data)
+    locationId: 0
+    -- location photo coordinates and size in the location photo file
+    photoX: 0
+    photoY: 0
+    photoW: 200
+    photoH: 200
+    -- location button location in the pervasive map
+    locationX: 90
+    locationY: 591
+}
+Location_CicloBasico {
+    -- location id (should be unique to be correctly associated in missions data)
+    locationId: 1
+    -- location photo coordinates and size in the location photo file
+    photoX: 200
+    photoY: 0
+    photoW: 200
+    photoH: 200
+    -- location button location in the pervasive map
+    locationX: 100
+    locationY: 391
+}
+Location_Library {
+    -- location id (should be unique to be correctly associated in missions data)
+    locationId: 2
+    -- location photo coordinates and size in the location photo file
+    photoX: 400
+    photoY: 0
+    photoW: 200
+    photoH: 200
+    -- location button location in the pervasive map
+    locationX: 216
+    locationY: 242
+}
+Location_RDC {
+    -- location id (should be unique to be correctly associated in missions data)
+    locationId: 3
+    -- location photo coordinates and size in the location photo file
+    photoX: 600
+    photoY: 0
+    photoW: 200
+    photoH: 200
+    -- location button location in the pervasive map
+    locationX: 85
+    locationY: 520
+}

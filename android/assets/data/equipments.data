@@ -1,0 +1,640 @@
+-- Equipment Data File
+-- README PLEASE!
+-- Contains equipments that will be available in game
+-- Equipment identifiers must contain their type (first letter should be uppercase)
+-- Types available: Helmet, Armor, Legs, Boots, Weapon, Shield, Ring, Amulet
+-- Be careful not to name them with a different type, they will be treated accordingly to their names!
+-- To use spaces in identifiers use underline "_" (see examples below)
+-- Pay attention in the provided examples and commentaries. Mimic them.
+-- IT IS NECESSARY TO ADD EACH EQUIPMENT NAME AND SLOT INDEX TO THEIR RESPECTIVE ENUM MODULES!
+-- Sorry for that, but java enums are complete static enumerations. It is nice
+-- to use them in item creation, so it is required to manually add each equipment name
+-- to their respective type enum class (in package item/enums).
+-- Equipment name and description should be created in language bundle property files
+-- Their names must be the same one here and in enum concatenated with "_Name" for names
+-- and "_Desc" for description. See provided examples in property file and mimic them.
+-- Do not change the order of equipment data, otherwise parsing will be incorrect!
+-- author: Pedro Sampaio
+-- since:  1.3
+--
+Golden_Skull_Helmet {
+    -- effects of equipment (do not skip any effect, even if their value is 0, otherwise parsing will fail!)
+    attack: 0
+    defense: 6
+    autoAttack: 0
+    maxHealth: 15
+    critChance: 0
+    critMult: 0
+    autoSpeed: 0
+    speed: 0
+    rateDrop: 0
+    rateExp: 0
+    rateGold: 0.25
+    -- chance of dropping the equipment
+    chance: 0.21
+    -- quality of the equipment (from 0 to 3, 3 is the highest quality)
+    quality: 3
+    -- equipment slot position (WEAPON, HELMET, ARMOR, LEGS, BOOTS, SHIELD, RING or AMULET only!)
+    slot: HELMET
+    -- slot index (this is very important, as it will be used to generated the item unique ID)
+    -- if this changes, an equipment ID will change too and player may have switched equipments
+    -- this number should be the id of this equipment relative to it slot type
+    -- meaning that for each slot type duplicates cannot exist
+    -- for optimization of IDs use, do not leave gaps in numeration of equipments from a slot
+    -- gap ex. (0,3,4,6,7). correct ex. (0,3,2,1,4)
+    -- each type is currently limited to 2000 entries, so use from 0 to 1999 for each type
+    index: 0
+    -- position of equipment in texture
+    xy: {529, 535}
+    -- size of equipment in texture
+    size: {67, 64}
+}
+Golden_Skull_Armor {
+    attack: 0
+    defense: 8
+    autoAttack: 0
+    maxHealth: 21
+    critChance: 0
+    critMult: 0
+    autoSpeed: 0
+    speed: 0
+    rateDrop: 0
+    rateExp: 0
+    rateGold: 0.25
+    chance: 0.1
+    quality: 3
+    slot: ARMOR
+    index: 0
+    xy: {537, 605}
+    size: {61, 65}
+}
+Golden_Skull_Legs {
+    attack: 0
+    defense: 5
+    autoAttack: 0
+    maxHealth: 11
+    critChance: 0
+    critMult: 0
+    autoSpeed: 0
+    speed: 10
+    rateDrop: 0
+    rateExp: 0
+    rateGold: 0.25
+    chance: 0.08
+    quality: 3
+    slot: LEGS
+    index: 0
+    xy: {538, 685}
+    size: {52, 64}
+}
+Golden_Skull_Boots {
+    attack: 0
+    defense: 4
+    autoAttack: 0
+    maxHealth: 10
+    critChance: 0
+    critMult: 0
+    autoSpeed: 0
+    speed: 15
+    rateDrop: 0
+    rateExp: 0
+    rateGold: 0.25
+    chance: 0.07
+    quality: 3
+    slot: BOOTS
+    index: 0
+    xy: {539, 755}
+    size: {50, 64}
+}
+Golden_Axe_Weapon {
+    attack: 12
+    defense: 0
+    autoAttack: 16
+    maxHealth: 0
+    critChance: 2.15
+    critMult: 1.21
+    autoSpeed: 0.022
+    speed: 0
+    rateDrop: 0
+    rateExp: 0
+    rateGold: 0.25
+    chance: 0.09
+    quality: 3
+    slot: WEAPON
+    index: 0
+    xy: {395, 467}
+    size: {67, 65}
+}
+Golden_Shield {
+    attack: 0
+    defense: 16
+    autoAttack: 0
+    maxHealth: 0
+    critChance: 0
+    critMult: 0
+    autoSpeed: 0
+    speed: 0
+    rateDrop: 0
+    rateExp: 0
+    rateGold: 0.25
+    chance: 0.067
+    quality: 3
+    slot: SHIELD
+    index: 0
+    xy: {132, 202}
+    size: {68, 67}
+}
+Golden_Ring {
+    attack: 0
+    defense: 0
+    autoAttack: 0
+    maxHealth: 0
+    critChance: 0.66
+    critMult: 0.21
+    autoSpeed: 0
+    speed: 0
+    rateDrop: 0.25
+    rateExp: 0.25
+    rateGold: 0.25
+    chance: 0.05
+    quality: 3
+    slot: RING
+    index: 0
+    xy: {195, 2}
+    size: {61, 67}
+}
+Golden_Amulet {
+    attack: 0
+    defense: 0
+    autoAttack: 0
+    maxHealth: 0
+    critChance: 1.61
+    critMult: 0
+    autoSpeed: 0
+    speed: 0
+    rateDrop: 0
+    rateExp: 0
+    rateGold: 0.25
+    chance: 0.04
+    quality: 3
+    slot: AMULET
+    index: 0
+    xy: {331, 0}
+    size: {67, 65}
+}
+Leather_Helmet {
+    attack: 0
+    defense: 1
+    autoAttack: 0
+    maxHealth: 0
+    critChance: 0
+    critMult: 0
+    autoSpeed: 0
+    speed: 0
+    rateDrop: 0
+    rateExp: 0
+    rateGold: 0
+    chance: 8
+    quality: 0
+    slot: HELMET
+    index: 1
+    xy: {420, 537}
+    size: {47, 63}
+}
+Leather_Armor {
+    attack: 0
+    defense: 2
+    autoAttack: 0
+    maxHealth: 0
+    critChance: 0
+    critMult: 0
+    autoSpeed: 0
+    speed: 0
+    rateDrop: 0
+    rateExp: 0
+    rateGold: 0
+    chance: 7.5
+    quality: 0
+    slot: ARMOR
+    index: 1
+    xy: {410, 607}
+    size: {65, 63}
+}
+Leather_Legs {
+    attack: 0
+    defense: 1
+    autoAttack: 0
+    maxHealth: 1
+    critChance: 0
+    critMult: 0
+    autoSpeed: 0
+    speed: 0
+    rateDrop: 0
+    rateExp: 0
+    rateGold: 0
+    chance: 7
+    quality: 0
+    slot: LEGS
+    index: 1
+    xy: {428, 688}
+    size: {36, 64}
+}
+Leather_Boots {
+    attack: 0
+    defense: 0
+    autoAttack: 0
+    maxHealth: 0
+    critChance: 0
+    critMult: 0
+    autoSpeed: 0
+    speed: 2
+    rateDrop: 0
+    rateExp: 0
+    rateGold: 0
+    chance: 6
+    quality: 0
+    slot: BOOTS
+    index: 1
+    xy: {415, 756}
+    size: {54, 64}
+}
+Club_Weapon {
+    attack: 2
+    defense: 0
+    autoAttack: 0
+    maxHealth: 0
+    critChance: 0
+    critMult: 0
+    autoSpeed: 0
+    speed: 0
+    rateDrop: 0
+    rateExp: 0
+    rateGold: 0
+    chance: 7.5
+    quality: 0
+    slot: WEAPON
+    index: 1
+    xy: {466, 269}
+    size: {63, 65}
+}
+Wooden_Shield {
+    attack: 0
+    defense: 2
+    autoAttack: 0
+    maxHealth: 0
+    critChance: 0
+    critMult: 0
+    autoSpeed: 0
+    speed: 0
+    rateDrop: 0
+    rateExp: 0
+    rateGold: 0
+    chance: 5.3
+    quality: 0
+    slot: SHIELD
+    index: 1
+    xy: {1, 135}
+    size: {63, 64}
+}
+Tribal_Ring {
+    attack: 0
+    defense: 0
+    autoAttack: 0
+    maxHealth: 0
+    critChance: 0.08
+    critMult: 0.015
+    autoSpeed: 0
+    speed: 0
+    rateDrop: 0
+    rateExp: 0
+    rateGold: 0
+    chance: 6.2
+    quality: 0
+    slot: RING
+    index: 1
+    xy: {265, 4}
+    size: {61, 62}
+}
+Tribal_Amulet {
+    attack: 0
+    defense: 0
+    autoAttack: 0
+    maxHealth: 0
+    critChance: 0.26
+    critMult: 0
+    autoSpeed: 0
+    speed: 0
+    rateDrop: 0
+    rateExp: 0
+    rateGold: 0
+    chance: 5.5
+    quality: 0
+    slot: AMULET
+    index: 1
+    xy: {468, 3}
+    size: {60, 60}
+}
+Scale_Helmet {
+    attack: 0
+    defense: 2
+    autoAttack: 0
+    maxHealth: 0
+    critChance: 0
+    critMult: 0
+    autoSpeed: 0
+    speed: 0
+    rateDrop: 0
+    rateExp: 0
+    rateGold: 0
+    chance: 2
+    quality: 1
+    slot: HELMET
+    index: 2
+    xy: {597, 531}
+    size: {66, 66}
+}
+Scale_Armor {
+    attack: 0
+    defense: 4
+    autoAttack: 0
+    maxHealth: 0
+    critChance: 0
+    critMult: 0
+    autoSpeed: 0
+    speed: 0
+    rateDrop: 0
+    rateExp: 0
+    rateGold: 0
+    chance: 1.9
+    quality: 1
+    slot: ARMOR
+    index: 2
+    xy: {604, 605}
+    size: {56, 63}
+}
+Scale_Legs {
+    attack: 0
+    defense: 2
+    autoAttack: 0
+    maxHealth: 3
+    critChance: 0
+    critMult: 0
+    autoSpeed: 0
+    speed: 0
+    rateDrop: 0
+    rateExp: 0
+    rateGold: 0
+    chance: 1.6
+    quality: 1
+    slot: LEGS
+    index: 2
+    xy: {603, 686}
+    size: {46, 63}
+}
+Scale_Boots {
+    attack: 0
+    defense: 1
+    autoAttack: 0
+    maxHealth: 0
+    critChance: 0
+    critMult: 0
+    autoSpeed: 0
+    speed: 4
+    rateDrop: 0
+    rateExp: 0
+    rateGold: 0
+    chance: 1.3
+    quality: 1
+    slot: BOOTS
+    index: 2
+    xy: {610, 755}
+    size: {36, 64}
+}
+Amethyst_Sword_Weapon {
+    attack: 6
+    defense: 0
+    autoAttack: 3
+    maxHealth: 0
+    critChance: 0
+    critMult: 0
+    autoSpeed: 0
+    speed: 0
+    rateDrop: 0
+    rateExp: 0
+    rateGold: 0
+    chance: 1.8
+    quality: 1
+    slot: WEAPON
+    index: 2
+    xy: {131, 339}
+    size: {62, 61}
+}
+Plate_Shield {
+    attack: 0
+    defense: 5
+    autoAttack: 0
+    maxHealth: 0
+    critChance: 0
+    critMult: 0
+    autoSpeed: 0
+    speed: 0
+    rateDrop: 0
+    rateExp: 0
+    rateGold: 0
+    chance: 1.3
+    quality: 1
+    slot: SHIELD
+    index: 2
+    xy: {268, 137}
+    size: {59, 67}
+}
+Amethyst_Ring {
+    attack: 0
+    defense: 0
+    autoAttack: 0
+    maxHealth: 0
+    critChance: 0.18
+    critMult: 0.04
+    autoSpeed: 0
+    speed: 0
+    rateDrop: 0
+    rateExp: 0
+    rateGold: 0
+    chance: 1.7
+    quality: 1
+    slot: RING
+    index: 2
+    xy: {128, 3}
+    size: {62, 61}
+}
+Amethyst_Amulet {
+    attack: 0
+    defense: 0
+    autoAttack: 0
+    maxHealth: 0
+    critChance: 0.46
+    critMult: 0
+    autoSpeed: 0
+    speed: 0
+    rateDrop: 0
+    rateExp: 0
+    rateGold: 0
+    chance: 1.5
+    quality: 1
+    slot: AMULET
+    index: 2
+    xy: {600, 62}
+    size: {64, 62}
+}
+Royal_Knight_Helmet {
+    attack: 0
+    defense: 4
+    autoAttack: 0
+    maxHealth: 5
+    critChance: 0
+    critMult: 0
+    autoSpeed: 0
+    speed: 0
+    rateDrop: 0
+    rateExp: 0
+    rateGold: 0
+    chance: 0.6
+    quality: 2
+    slot: HELMET
+    index: 3
+    xy: {9, 538}
+    size: {51, 63}
+}
+Royal_Knight_Armor {
+    attack: 0
+    defense: 6
+    autoAttack: 0
+    maxHealth: 6
+    critChance: 0
+    critMult: 0
+    autoSpeed: 0
+    speed: 0
+    rateDrop: 0
+    rateExp: 0
+    rateGold: 0
+    chance: 0.4
+    quality: 2
+    slot: ARMOR
+    index: 3
+    xy: {3, 610}
+    size: {66, 60}
+}
+Royal_Knight_Legs {
+    attack: 0
+    defense: 3
+    autoAttack: 0
+    maxHealth: 5
+    critChance: 0
+    critMult: 0
+    autoSpeed: 0
+    speed: 0
+    rateDrop: 0
+    rateExp: 0
+    rateGold: 0
+    chance: 0.36
+    quality: 2
+    slot: LEGS
+    index: 3
+    xy: {8, 675}
+    size: {50, 64}
+}
+Royal_Knight_Boots {
+    attack: 0
+    defense: 2
+    autoAttack: 0
+    maxHealth: 0
+    critChance: 0
+    critMult: 0
+    autoSpeed: 0
+    speed: 7
+    rateDrop: 0
+    rateExp: 0
+    rateGold: 0
+    chance: 0.31
+    quality: 2
+    slot: BOOTS
+    index: 3
+    xy: {2, 753}
+    size: {64, 60}
+}
+Royal_Spear_Weapon {
+    attack: 8
+    defense: 0
+    autoAttack: 8
+    maxHealth: 0
+    critChance: 0
+    critMult: 0
+    autoSpeed: 0
+    speed: 0
+    rateDrop: 0
+    rateExp: 0
+    rateGold: 0
+    chance: 0.45
+    quality: 2
+    slot: WEAPON
+    index: 3
+    xy: {596, 132}
+    size: {62, 61}
+}
+Royal_Shield {
+    attack: 0
+    defense: 10
+    autoAttack: 0
+    maxHealth: 0
+    critChance: 0
+    critMult: 0
+    autoSpeed: 0
+    speed: 0
+    rateDrop: 0
+    rateExp: 0
+    rateGold: 0
+    chance: 0.44
+    quality: 2
+    slot: SHIELD
+    index: 3
+    xy: {200, 203}
+    size: {65, 63}
+}
+Royal_Ring {
+    attack: 0
+    defense: 0
+    autoAttack: 0
+    maxHealth: 0
+    critChance: 0.30
+    critMult: 0.10
+    autoSpeed: 0
+    speed: 0
+    rateDrop: 0
+    rateExp: 0
+    rateGold: 0
+    chance: 0.33
+    quality: 2
+    slot: RING
+    index: 3
+    xy: {0, 3}
+    size: {60, 63}
+}
+Royal_Amulet {
+    attack: 0
+    defense: 0
+    autoAttack: 0
+    maxHealth: 0
+    critChance: 0.82
+    critMult: 0
+    autoSpeed: 0
+    speed: 0
+    rateDrop: 0
+    rateExp: 0
+    rateGold: 0
+    chance: 0.29
+    quality: 2
+    slot: AMULET
+    index: 3
+    xy: {531, 0}
+    size: {67, 63}
+}

@@ -1,0 +1,258 @@
+-- Missions Data File
+-- README PLEASE!
+-- Contains missions that will be available in game
+-- To use spaces in identifiers use underline "_" (see examples below)
+-- Pay attention in the provided examples and commentaries. Mimic them.
+-- Mission name and description should be created in language bundle property files
+-- Their names must be the same one here and in enum concatenated with "_Name" for names
+-- and "_Desc" for description. See provided examples in property file and mimic them.
+-- author: Pedro Sampaio
+-- since:  2.0
+--
+Mission_VisitLabGrad {
+    -- mission id (should be unique to properly identify this mission)
+    missionId: 0
+    -- location id (should be one of the locations ID in locations data)
+    locationId: 1
+    -- is this mission repeatable?
+    missionRep: false
+    -- if it is repeatable, what is the interval (in minutes) to repeat it
+    missionInterval: 0
+    -- mission normal rewards
+    missionExpReward: 100
+    missionGoldReward: 25
+    -- mission drop rewards (ids separated by commas, see examples)
+    missionDropReward: {3000, 5000, 7000}
+    -- mission equipment level
+    missionEquipLevel: 15
+    -- mission prerequisites (other missions that should be done before this one is enabled)
+    missionPreReq: {}
+}
+Mission_LabGradAccount {
+    -- mission id (should be unique to properly identify this mission)
+    missionId: 1
+    -- location id (should be one of the locations ID in locations data)
+    locationId: 1
+    -- is this mission repeatable?
+    missionRep: false
+    -- if it is repeatable, what is the interval (in minutes) to repeat it
+    missionInterval: 0
+    -- mission normal rewards
+    missionExpReward: 250
+    missionGoldReward: 150
+    -- mission drop rewards (ids separated by commas, see examples)
+    missionDropReward: {}
+    -- mission equipment level
+    missionEquipLevel: 1
+    -- mission prerequisites (other missions that should be done before this one is enabled)
+    missionPreReq: {}
+}
+Mission_VisitCicloBasico {
+    -- mission id (should be unique to properly identify this mission)
+    missionId: 2
+    -- location id (should be one of the locations ID in locations data)
+    locationId: 1
+    -- is this mission repeatable?
+    missionRep: true
+    -- if it is repeatable, what is the interval (in minutes) to repeat it
+    missionInterval: 1440
+    -- mission normal rewards
+    missionExpReward: 125
+    missionGoldReward: 50
+    -- mission drop rewards (ids separated by commas, see examples)
+    missionDropReward: {9000, 11000, 13000}
+    -- mission equipment level
+    missionEquipLevel: 20
+    -- mission prerequisites (other missions that should be done before this one is enabled)
+    missionPreReq: {}
+}
+Mission_SecretPrize {
+    -- mission id (should be unique to properly identify this mission)
+    missionId: 3
+    -- location id (should be one of the locations ID in locations data)
+    locationId: 3
+    -- is this mission repeatable?
+    missionRep: false
+    -- if it is repeatable, what is the interval (in minutes) to repeat it
+    missionInterval: 0
+    -- mission normal rewards
+    missionExpReward: 11250
+    missionGoldReward: 500000
+    -- mission drop rewards (ids separated by commas, see examples)
+    missionDropReward: {3000, 5000, 7000, 9000, 11000, 13000, 15000, 17000}
+    -- mission equipment level
+    missionEquipLevel: 50
+    -- mission prerequisites (other missions that should be done before this one is enabled)
+    missionPreReq: {}
+}
+Mission_Circuit1 {
+    -- mission id (should be unique to properly identify this mission)
+    missionId: 4
+    -- location id (should be one of the locations ID in locations data)
+    locationId: 3
+    -- is this mission repeatable?
+    missionRep: false
+    -- if it is repeatable, what is the interval (in minutes) to repeat it
+    missionInterval: 0
+    -- mission normal rewards
+    missionExpReward: 125
+    missionGoldReward: 500
+    -- mission drop rewards (ids separated by commas, see examples)
+    missionDropReward: {3002, 5002, 7002}
+    -- mission equipment level
+    missionEquipLevel: 5
+    -- mission prerequisites (other missions that should be done before this one is enabled)
+    missionPreReq: {}
+}
+Mission_Circuit2 {
+    -- mission id (should be unique to properly identify this mission)
+    missionId: 5
+    -- location id (should be one of the locations ID in locations data)
+    locationId: 3
+    -- is this mission repeatable?
+    missionRep: false
+    -- if it is repeatable, what is the interval (in minutes) to repeat it
+    missionInterval: 0
+    -- mission normal rewards
+    missionExpReward: 250
+    missionGoldReward: 1000
+    -- mission drop rewards (ids separated by commas, see examples)
+    missionDropReward: {9002, 11002, 13002}
+    -- mission equipment level
+    missionEquipLevel: 8
+    -- mission prerequisites (other missions that should be done before this one is enabled)
+    missionPreReq: {4}
+}
+Mission_Circuit3 {
+    -- mission id (should be unique to properly identify this mission)
+    missionId: 6
+    -- location id (should be one of the locations ID in locations data)
+    locationId: 3
+    -- is this mission repeatable?
+    missionRep: false
+    -- if it is repeatable, what is the interval (in minutes) to repeat it
+    missionInterval: 0
+    -- mission normal rewards
+    missionExpReward: 450
+    missionGoldReward: 1800
+    -- mission drop rewards (ids separated by commas, see examples)
+    missionDropReward: {15002, 17002}
+    -- mission equipment level
+    missionEquipLevel: 12
+    -- mission prerequisites (other missions that should be done before this one is enabled)
+    missionPreReq: {5}
+}
+Mission_ClassGameAI {
+    -- mission id (should be unique to properly identify this mission)
+    missionId: 7
+    -- location id (should be one of the locations ID in locations data)
+    locationId: 3
+    -- is this mission repeatable?
+    missionRep: true
+    -- if it is repeatable, what is the interval (in minutes) to repeat it
+    missionInterval: 60
+    -- mission normal rewards
+    missionExpReward: 120
+    missionGoldReward: 320
+    -- mission drop rewards (ids separated by commas, see examples)
+    missionDropReward: {}
+    -- mission equipment level
+    missionEquipLevel: 1
+    -- mission prerequisites (other missions that should be done before this one is enabled)
+    missionPreReq: {}
+}
+Mission_LectureContextNet {
+    -- mission id (should be unique to properly identify this mission)
+    missionId: 8
+    -- location id (should be one of the locations ID in locations data)
+    locationId: 3
+    -- is this mission repeatable?
+    missionRep: true
+    -- if it is repeatable, what is the interval (in minutes) to repeat it
+    missionInterval: 30
+    -- mission normal rewards
+    missionExpReward: 420
+    missionGoldReward: 520
+    -- mission drop rewards (ids separated by commas, see examples)
+    missionDropReward: {15003}
+    -- mission equipment level
+    missionEquipLevel: 10
+    -- mission prerequisites (other missions that should be done before this one is enabled)
+    missionPreReq: {}
+}
+Mission_SecondCircuit1 {
+    -- mission id (should be unique to properly identify this mission)
+    missionId: 9
+    -- location id (should be one of the locations ID in locations data)
+    locationId: 0
+    -- is this mission repeatable?
+    missionRep: false
+    -- if it is repeatable, what is the interval (in minutes) to repeat it
+    missionInterval: 0
+    -- mission normal rewards
+    missionExpReward: 1250
+    missionGoldReward: 5000
+    -- mission drop rewards (ids separated by commas, see examples)
+    missionDropReward: {3000, 5000}
+    -- mission equipment level
+    missionEquipLevel: 10
+    -- mission prerequisites (other missions that should be done before this one is enabled)
+    missionPreReq: {}
+}
+Mission_SecondCircuit2 {
+    -- mission id (should be unique to properly identify this mission)
+    missionId: 10
+    -- location id (should be one of the locations ID in locations data)
+    locationId: 2
+    -- is this mission repeatable?
+    missionRep: false
+    -- if it is repeatable, what is the interval (in minutes) to repeat it
+    missionInterval: 0
+    -- mission normal rewards
+    missionExpReward: 2500
+    missionGoldReward: 10000
+    -- mission drop rewards (ids separated by commas, see examples)
+    missionDropReward: {7000, 9000, 11000}
+    -- mission equipment level
+    missionEquipLevel: 20
+    -- mission prerequisites (other missions that should be done before this one is enabled)
+    missionPreReq: {9}
+}
+Mission_SecondCircuit3M {
+    -- mission id (should be unique to properly identify this mission)
+    missionId: 11
+    -- location id (should be one of the locations ID in locations data)
+    locationId: 0
+    -- is this mission repeatable?
+    missionRep: false
+    -- if it is repeatable, what is the interval (in minutes) to repeat it
+    missionInterval: 0
+    -- mission normal rewards
+    missionExpReward: 10000
+    missionGoldReward: 50000
+    -- mission drop rewards (ids separated by commas, see examples)
+    missionDropReward: {13000, 15000, 17000}
+    -- mission equipment level
+    missionEquipLevel: 35
+    -- mission prerequisites (other missions that should be done before this one is enabled)
+    missionPreReq: {10}
+}
+Mission_SecondCircuit3F {
+    -- mission id (should be unique to properly identify this mission)
+    missionId: 12
+    -- location id (should be one of the locations ID in locations data)
+    locationId: 0
+    -- is this mission repeatable?
+    missionRep: false
+    -- if it is repeatable, what is the interval (in minutes) to repeat it
+    missionInterval: 0
+    -- mission normal rewards
+    missionExpReward: 10000
+    missionGoldReward: 50000
+    -- mission drop rewards (ids separated by commas, see examples)
+    missionDropReward: {13000, 15000, 17000}
+    -- mission equipment level
+    missionEquipLevel: 35
+    -- mission prerequisites (other missions that should be done before this one is enabled)
+    missionPreReq: {10}
+}
